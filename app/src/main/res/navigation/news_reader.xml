@@ -9,5 +9,22 @@
         android:id="@+id/articleListFragment"
         android:name="com.umbrella.newsreader.view.articlelist.ArticleListFragment"
         android:label="ArticleListFragment"
-        tools:layout="@layout/list_with_toolbar" />
+        tools:layout="@layout/list_with_toolbar">
+        <action
+            android:id="@+id/action_articleListFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.umbrella.newsreader.view.articledetail.ArticleDetailFragment"
+        android:label="ArticleDetailFragment"
+        tools:layout="@layout/list_with_toolbar">
+        <argument
+            android:name="article"
+            app:argType="com.umbrella.data.model.article.Article" />
+    </fragment>
 </navigation>

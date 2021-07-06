@@ -1,7 +1,9 @@
 package com.umbrella.data.model.article
 
 
+import android.os.Parcelable
 import com.umbrella.data.util.MapDto
+import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -52,6 +54,7 @@ class ArticleDto(
     }
 }
 
+@Parcelize
 data class Article(
     val id: String,
     val title: String,
@@ -59,4 +62,4 @@ data class Article(
     val description: String,
     val image: String,
     val publisher: Publisher,
-)
+) : Parcelable

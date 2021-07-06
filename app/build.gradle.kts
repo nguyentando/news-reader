@@ -4,6 +4,7 @@ plugins {
     kotlin(Plugins.kotlinAndroid)
     id(Plugins.kotlinParcel)
     kotlin(Plugins.kapt)
+    id(Plugins.safeArgs)
 }
 
 android {
