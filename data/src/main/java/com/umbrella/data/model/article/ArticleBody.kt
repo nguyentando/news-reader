@@ -9,6 +9,7 @@ sealed class ArticleBody {
     data class Text(val text: String) : ArticleBody()
     data class Caption(val text: String) : ArticleBody()
     data class Image(val url: String, val width: Int, val height: Int) : ArticleBody()
+    data class H5(val text: String) : ArticleBody()
 }
 
 @Serializable
@@ -41,6 +42,11 @@ data class ArticleBodyDto(
                 when (subType) {
                     "caption" -> {
                         ArticleBody.Caption(
+                            text = content.orEmpty()
+                        )
+                    }
+                    "h5" -> {
+                        ArticleBody.H5(
                             text = content.orEmpty()
                         )
                     }

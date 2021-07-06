@@ -48,4 +48,10 @@ sealed class ArticleDetailVH(itemView: View) : RecyclerView.ViewHolder(itemView)
             binding.root.text = item.text
         }
     }
+
+    class ArticleH5VH(private val binding: ArticleH5Binding) : ArticleDetailVH(binding.root) {
+        fun bind(item: ArticleItemUI.H5) {
+            binding.root.text = item.text
+        }
+    }
 }

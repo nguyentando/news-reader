@@ -29,6 +29,9 @@ class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : Li
             R.layout.article_caption -> {
                 ArticleDetailVH.ArticleCaptionVH(ArticleCaptionBinding.inflate(inflater, parent, false))
             }
+            R.layout.article_h5 -> {
+                ArticleDetailVH.ArticleH5VH(ArticleH5Binding.inflate(inflater, parent, false))
+            }
             else -> throw IllegalArgumentException("Invalid viewType")
         }
     }
@@ -41,6 +44,7 @@ class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : Li
             is ArticleDetailVH.ArticleTextVH -> holder.bind(item as ArticleItemUI.Text)
             is ArticleDetailVH.ArticleImageVH -> holder.bind(item as ArticleItemUI.Image)
             is ArticleDetailVH.ArticleCaptionVH -> holder.bind(item as ArticleItemUI.Caption)
+            is ArticleDetailVH.ArticleH5VH -> holder.bind(item as ArticleItemUI.H5)
         }
     }
 
@@ -51,6 +55,7 @@ class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : Li
             is ArticleItemUI.Image -> R.layout.article_image
             is ArticleItemUI.Text -> R.layout.article_text
             is ArticleItemUI.Caption -> R.layout.article_caption
+            is ArticleItemUI.H5 -> R.layout.article_h5
         }
     }
 }

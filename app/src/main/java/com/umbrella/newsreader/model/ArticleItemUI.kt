@@ -8,4 +8,5 @@ sealed class ArticleItemUI {
     data class Text(val text: Spanned) : ArticleItemUI()
     data class Image(val url: String, val width: Int, val height: Int) : ArticleItemUI()
     data class Caption(val text: String) : ArticleItemUI()
+    data class H5(val text: String) : ArticleItemUI()
 }
