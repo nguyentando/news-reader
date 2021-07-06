@@ -11,7 +11,7 @@ inline fun <reified T : Fragment> newInstanceFragment(bundle: Bundle?): T {
 }
 
 fun Fragment.getDimen(dimenRes: Int): Float {
-    return resources.getDimension(dimenRes)
+    return requireContext().getDimen(dimenRes)
 }
 
 val Fragment.spacePrettySmall

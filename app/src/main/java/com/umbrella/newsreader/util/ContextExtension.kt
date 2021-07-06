@@ -21,3 +21,10 @@ fun Context.getActionBarHeight(): Int? {
         null
     }
 }
+
+fun Context.screenHeight() = resources.displayMetrics.heightPixels
+fun Context.screenWidth() = resources.displayMetrics.widthPixels
+
+fun Context.getDimen(dimenRes: Int): Float {
+    return resources.getDimension(dimenRes)
+}

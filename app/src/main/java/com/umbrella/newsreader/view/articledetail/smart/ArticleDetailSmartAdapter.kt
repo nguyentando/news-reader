@@ -3,6 +3,7 @@ package com.umbrella.newsreader.view.articledetail.smart
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
+import com.bumptech.glide.RequestManager
 import com.umbrella.newsreader.R
 import com.umbrella.newsreader.databinding.ArticleDescriptionBinding
 import com.umbrella.newsreader.databinding.ArticleImageBinding
@@ -12,7 +13,7 @@ import com.umbrella.newsreader.model.ArticleItemUI
 import com.umbrella.newsreader.view.diffutil.ArticleItemUIDiffUtil
 import com.umbrella.newsreader.view.viewholder.ArticleDetailVH
 
-class ArticleDetailSmartAdapter : ListAdapter<ArticleItemUI, ArticleDetailVH>(ArticleItemUIDiffUtil()) {
+class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : ListAdapter<ArticleItemUI, ArticleDetailVH>(ArticleItemUIDiffUtil()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleDetailVH {
         val inflater = LayoutInflater.from(parent.context)
         return when (viewType) {
@@ -26,7 +27,7 @@ class ArticleDetailSmartAdapter : ListAdapter<ArticleItemUI, ArticleDetailVH>(Ar
                 ArticleDetailVH.ArticleTextVH(ArticleTextBinding.inflate(inflater, parent, false))
             }
             R.layout.article_image -> {
-                ArticleDetailVH.ArticleImageVH(ArticleImageBinding.inflate(inflater, parent, false))
+                ArticleDetailVH.ArticleImageVH(requestManager, ArticleImageBinding.inflate(inflater, parent, false))
             }
             else -> throw IllegalArgumentException("Invalid viewType")
         }
