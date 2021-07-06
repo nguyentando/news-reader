@@ -1,5 +1,6 @@
 plugins {
     id(Plugins.androidLibrary)
+    id(Plugins.serialization)
     id(Plugins.hilt)
     kotlin(Plugins.kotlinAndroid)
     kotlin(Plugins.kapt)
