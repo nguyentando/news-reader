@@ -3,7 +3,6 @@ object Versions {
     const val coroutines = "1.5.0"
     const val gradlePlugin: String = "4.0.2"
     const val glide: String = "4.11.0"
-    const val glideTransform: String = "4.0.0"
     const val supportLibrary: String = "1.2.0"
     const val material: String = "1.3.0"
     const val constraintLayout: String = "2.1.0-beta02"
@@ -17,21 +16,7 @@ object Versions {
     const val log = "4.7.1"
     const val hilt = "2.35"
     const val hiltWorkManager = "1.0.0"
-    const val viewBindingHelper = "1.3.1"
-    const val fps = "2.1.0"
     const val kotlinSerialization = "1.2.1"
-    const val workManager = "2.7.0-alpha04"
-    const val testExtJunit = "1.1.0"
-    const val coreTestingVersion = "2.0.0"
-    const val espressoVersion = "3.1.1"
-    const val truth = "1.1.2"
-    const val mockKotlin = "2.2.0"
-    const val firebase = "26.5.0"
-    const val mockito = "2.22.0"
-    const val graph = "v3.1.0"
-    const val leak = "2.7"
-    const val crypto = "1.0.0"
-    const val androidXTest = "1.4.0"
 }
 
 object Libs {
@@ -68,6 +53,8 @@ object Libs {
 
     object Helper {
         const val log = "com.jakewharton.timber:timber:${Versions.log}"
+        const val parser =
+            "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinSerialization}"
     }
 
     object Thread {
@@ -86,34 +73,6 @@ object Libs {
         const val converter =
             "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0"
         const val log = "com.squareup.okhttp3:logging-interceptor:4.9.0"
-    }
-
-    object Test {
-        const val core = "junit:junit:4.12"
-        const val androidXTestCore = "androidx.test:core:${Versions.androidXTest}"
-        const val androidXTestRules = "androidx.test:rules:${Versions.androidXTest}"
-        const val androidXTestRunner = "androidx.test:runner:${Versions.androidXTest}"
-        const val robolectric = "androidx.test:core:1.0.0"
-        const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
-
-        const val mockitoAndroid = "org.mockito:mockito-android:${Versions.mockito}"
-        const val mockKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.mockKotlin}"
-        const val room = "androidx.room:room-testing:${Versions.room}"
-        const val hilt = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
-        const val hilt2 = "com.google.dagger:hilt-android-testing:${Versions.hilt}"
-        const val archCore = "androidx.arch.core:core-testing:${Versions.coreTestingVersion}"
-        const val espresso1 = "androidx.test.espresso:espresso-contrib:${Versions.espressoVersion}"
-        const val espresso2 = "androidx.test.espresso:espresso-core:${Versions.espressoVersion}"
-        const val espresso3 = "androidx.test.espresso:espresso-intents:${Versions.espressoVersion}"
-        const val truth = "com.google.truth:truth:${Versions.truth}"
-        const val coroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
-        const val workManager = "androidx.work:work-testing:${Versions.workManager}"
-    }
-
-    object Firebase {
-        const val core = "com.google.firebase:firebase-bom:${Versions.firebase}"
-        const val analytics = "com.google.firebase:firebase-analytics-ktx"
-        const val crash = "com.google.firebase:firebase-crashlytics-ktx"
     }
 }
 
