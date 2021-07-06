@@ -2,7 +2,7 @@ package com.umbrella.newsreader.view.articledetail.web
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
-import com.umbrella.data.model.article.Article
+import com.umbrella.data.model.article.ArticleHeader
 import com.umbrella.newsreader.util.SavedStateHandleManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -14,7 +14,7 @@ class ArticleDetailIABViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     savedStateHandleManager: SavedStateHandleManager
 ) : ViewModel() {
-    private val _loadWeb = MutableStateFlow(savedStateHandleManager.getNavArgs<Article>(savedStateHandle).url)
+    private val _loadWeb = MutableStateFlow(savedStateHandleManager.getNavArgs<ArticleHeader>(savedStateHandle).url)
     val loadWeb: StateFlow<String> = _loadWeb
     private val _showLoading = MutableStateFlow(true)
     val showLoading: StateFlow<Boolean> = _showLoading

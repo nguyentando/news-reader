@@ -9,7 +9,7 @@ fun <T, R : MapDto<T>> CallFake<RestResponse<R>>.toResult(errorUtil: ErrorUtil):
         if (response.isSuccessful) {
             val body = response.body()
             if (body == null) {
-                Result.Error(errorUtil.categorizeException(ApiException("body null")))
+                Result.Error(errorUtil.categorizeException(UnknownException))
             } else {
                 val errorCode = body.errorCode
                 Timber.e("get response error code $errorCode")
@@ -17,7 +17,7 @@ fun <T, R : MapDto<T>> CallFake<RestResponse<R>>.toResult(errorUtil: ErrorUtil):
                     0 -> {
                         body.data?.let {
                             Result.Success(it.map())
-                        } ?: Result.Error(ApiException("data is null"))
+                        } ?: Result.Error(UnknownException)
                     }
                     else -> {
                         Result.Error(errorUtil.categorizeExceptionByErrorCode(errorCode ?: -1))
@@ -25,7 +25,7 @@ fun <T, R : MapDto<T>> CallFake<RestResponse<R>>.toResult(errorUtil: ErrorUtil):
                 }
             }
         } else {
-            Result.Error(errorUtil.categorizeException(ApiException(response.code().toString())))
+            Result.Error(errorUtil.categorizeException(UnknownException))
         }
     } catch (e: Exception) {
         Timber.e("exception $e")

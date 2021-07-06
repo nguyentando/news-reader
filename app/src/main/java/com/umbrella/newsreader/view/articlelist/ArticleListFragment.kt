@@ -7,7 +7,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
-import com.umbrella.data.model.article.Article
+import com.umbrella.data.model.article.ArticleHeader
 import com.umbrella.newsreader.R
 import com.umbrella.newsreader.databinding.ListWithToolbarBinding
 import com.umbrella.newsreader.util.launchAndCollectIn
@@ -27,7 +27,7 @@ class ArticleListFragment : Fragment(R.layout.list_with_toolbar) {
         }
         val articleAdapter = ArticleAdapter(Glide.with(this)).apply {
             callback = object : ArticleAdapter.Callback {
-                override fun onClick(view: View, pos: Int, item: Article) {
+                override fun onClick(view: View, pos: Int, item: ArticleHeader) {
                     view.findNavController().navigate(ArticleListFragmentDirections.actionArticleListFragmentToArticleDetailFragment(item))
                 }
             }

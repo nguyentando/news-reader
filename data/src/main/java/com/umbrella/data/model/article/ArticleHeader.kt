@@ -11,8 +11,8 @@ import kotlinx.serialization.Serializable
 class ArticleListDto(
     @SerialName("contents")
     val contents: List<ArticleDto?>? = null
-) : MapDto<List<Article>> {
-    override fun map(): List<Article> {
+) : MapDto<List<ArticleHeader>> {
+    override fun map(): List<ArticleHeader> {
         return (contents ?: emptyList<ArticleDto>()).mapNotNull {
             it?.map()
         }
@@ -36,10 +36,12 @@ class ArticleDto(
     @SerialName("title")
     val title: String? = null,
     @SerialName("url")
-    val url: String? = null
-) : MapDto<Article?> {
-    override fun map(): Article? {
-        return Article(
+    val url: String? = null,
+    @SerialName("body")
+    val body: List<ArticleBodyDto?>? = null
+) : MapDto<ArticleHeader?> {
+    override fun map(): ArticleHeader? {
+        return ArticleHeader(
             id = contentId ?: return null,
             title = title.orEmpty(),
             url = url.orEmpty(),
@@ -55,7 +57,7 @@ class ArticleDto(
 }
 
 @Parcelize
-data class Article(
+data class ArticleHeader(
     val id: String,
     val title: String,
     val url: String,

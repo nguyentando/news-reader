@@ -1,6 +1,6 @@
 package com.umbrella.domain.usecase.article
 
-import com.umbrella.data.model.article.Article
+import com.umbrella.data.model.article.ArticleHeader
 import com.umbrella.data.repository.ArticleRepository
 import com.umbrella.data.util.getDataNonNull
 import com.umbrella.domain.UseCase
@@ -12,8 +12,8 @@ class GetArticleListParam()
 class GetArticleListUseCase @Inject constructor(
     @IoDispatcher private val dispatcher: CoroutineDispatcher,
     private val articleRepository: ArticleRepository
-) : UseCase<GetArticleListParam, List<Article>>(dispatcher) {
-    override suspend fun execute(parameters: GetArticleListParam): List<Article> {
+) : UseCase<GetArticleListParam, List<ArticleHeader>>(dispatcher) {
+    override suspend fun execute(parameters: GetArticleListParam): List<ArticleHeader> {
         return articleRepository.getArticleList().getDataNonNull()
     }
 }

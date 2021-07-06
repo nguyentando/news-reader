@@ -25,6 +25,6 @@
         tools:layout="@layout/article_detail_container">
         <argument
             android:name="article"
-            app:argType="com.umbrella.data.model.article.Article" />
+            app:argType="com.umbrella.data.model.article.ArticleHeader" />
     </fragment>
 </navigation>
