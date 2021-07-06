@@ -1,5 +1,6 @@
 package com.umbrella.newsreader.binding
 
+import androidx.core.view.updatePadding
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,4 +12,12 @@ fun RecyclerView.bindLinear(isLinear: Boolean?) {
         layoutManager = LinearLayoutManager(context)
     }
     setHasFixedSize(true)
+}
+
+@BindingAdapter("paddingBottom")
+fun RecyclerView.bindPaddingBottom(paddingBottom: Int?) {
+    paddingBottom?.let {
+        clipToPadding = false
+        updatePadding(bottom = paddingBottom)
+    }
 }

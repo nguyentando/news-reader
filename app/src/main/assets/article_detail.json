@@ -2,8 +2,8 @@
   "data": {
     "content": {
       "content_id": 39391287,
-      "title": "BTC price drops to fill Bitcoin futures gap as focus turns to ${'$'}46.5K bull target",
-      "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer ${'$'}50,000 providing a frame of reference for bulls.",
+      "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
+      "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
       "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
       "publisher_id": 20,
       "publisher_name": "WILLIAM SUBERG",
@@ -18,7 +18,47 @@
         },
         {
           "type": "text",
-          "content": "<strong>Bitcoin (BTC) traded at crucial support near ${'$'}33,000 on Monday after a weekend of gains disappeared in hours. </strong>"
+          "content": "Bitcoin (<a href=\"https://cointelegraph.com/bitcoin-price\">BTC</a>) traded at crucial support near ${'$'}33,000 on Monday after a weekend of gains disappeared in hours."
+        },
+        {
+          "type": "image",
+          "content": "https://s3.cointelegraph.com/uploads/2021-07/469b3039-8ee1-47be-a024-6df4e110b3f2.png",
+          "width": 1006,
+          "height": 577
+        },
+        {
+          "type": "text",
+          "content": "BTC/USD 1-hour candle chart (Bitstamp). Source: TradingView",
+          "subType": "caption"
+        },
+        {
+          "type": "text",
+          "content": "Bitcoin futures mark fresh price targets",
+          "subType": "h5"
+        },
+        {
+          "type": "text",
+          "content": "Data from Cointelegraph Markets Pro and TradingView showed BTC/USD reversing bullish performance at $35,900 to drop just over 5% on the day.\n\nThe U-turn leaves Bitcoin firmly within its established trading range, with traders mindful of various hurdles to overcome before continuation can take place.\n\nFor Michaël van de Poppe, these hurdles come in the form of Bitcoin futures gaps.\n\nOn Friday, CME futures closed the week at around $33,285, a full $2,700 below Sunday’s local high.\n\nAs a result, the temptation was there for spot price action to fall in order to “fill” the resulting gap between the end of one week’s trading and the start of the next.\n\nThis is exactly what happened — BTC/USD bounced at around $33,300, hovering at $33,600 at the time of writing.\n\n“I’m expecting a corrective move to $33,400 with the CME Gap getting filled, and then we can start continuing,” Van de Poppe said prior to the event taking place.\n\nHe added that the CME gap higher up at $46,500 is also apt to act as a bullish target should upside enter the picture.\n\n“If we get a rally, I’ll not be surprised that we get a rally towards this CME gap in general,” he commented.\n\n"
+        },
+        {
+          "type": "image",
+          "content": "https://s3.cointelegraph.com/uploads/2021-07/4f8a5113-592e-4681-a75d-3a00d400c110.png",
+          "width": 1006,
+          "height": 577
+        },
+        {
+          "type": "text",
+          "content": "CME Bitcoin futures 1-day candle chart showing gaps. Source: TradingView",
+          "subType": "caption"
+        },
+        {
+          "type": "text",
+          "content": "Altcoins stave off capitulation",
+          "subType": "h5"
+        },
+        {
+          "type": "text",
+          "content": "The past seven days have been broadly kinder to altcoins, meanwhile, with many tokens up versus the same time last week while Bitcoin remains lower.\n\n<strong>Related: Top 5 cryptocurrencies to watch this week: BTC, ETH, UNI, ICP, AAVE</strong>\n\nEther (ETH), the largest altcoin by market capitalization, was in the red on Monday but still up 11% over the course of the week, trading at $2,213.\n\nAs Cointelegraph reported, Ether’s price is also showing strength against Bitcoin, with ETH/BTC targeting a popular range high of 0.075.\n\nOnly two of the top 50 cryptocurrencies by market cap saw positive price movements on the day, however, as Bitcoin’s sudden reversal took its toll.\n\nSlightly declining Bitcoin dominance provides a potential benefit to altcoins, which tend to perform best during periods of middling BTC action following major dips.\n\nThe views and opinions expressed here are solely those of the author and do not necessarily reflect the views of Cointelegraph.com. Every investment and trading move involves risk, you should conduct your own research when making a decision.\n\n"
         }
       ]
     },

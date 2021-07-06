@@ -7,11 +7,16 @@
         <variable
             name="isLinearList"
             type="Boolean" />
+
+        <variable
+            name="paddingBottom"
+            type="Integer" />
     </data>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:isLinearList="@{isLinearList}" />
+        app:isLinearList="@{isLinearList}"
+        app:paddingBottom="@{paddingBottom}" />
 </layout>
