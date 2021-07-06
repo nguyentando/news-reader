@@ -26,6 +26,7 @@ android {
 }
 
 dependencies {
+    api(project(":data"))
 
     // kotlin
     implementation(Libs.Kotlin.std)
