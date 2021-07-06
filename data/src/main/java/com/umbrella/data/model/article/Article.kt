@@ -23,7 +23,7 @@ class ArticleDto(
     val contentId: String? = null,
     @SerialName("description")
     val description: String? = null,
-    @SerialName("images")
+    @SerialName("image")
     val image: String? = null,
     @SerialName("publisher_icon")
     val publisherIcon: String? = null,

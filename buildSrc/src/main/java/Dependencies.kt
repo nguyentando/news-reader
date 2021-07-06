@@ -12,7 +12,7 @@ object Versions {
     const val coreKtx = "1.3.2"
     const val fragmentKtx = "1.3.3"
     const val activityKtx = "1.2.2"
-    const val lifeCycleKtx = "2.4.0-alpha01"
+    const val lifeCycleKtx = "2.4.0-alpha02"
     const val log = "4.7.1"
     const val hilt = "2.35"
     const val hiltWorkManager = "1.0.0"

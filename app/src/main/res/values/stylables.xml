@@ -5,4 +5,13 @@
         <attr name="show_back" format="boolean" />
         <attr name="icon" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="AspectRatioImageView">
+        <attr name="ari_aspectRatio" format="string" />
+        <attr name="ari_aspectRatioEnabled" format="boolean" />
+        <attr name="ari_dominantMeasurement">
+            <enum name="width" value="0" />
+            <enum name="height" value="1" />
+        </attr>
+    </declare-styleable>
 </resources>

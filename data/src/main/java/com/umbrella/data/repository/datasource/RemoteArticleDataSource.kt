@@ -3,10 +3,7 @@ package com.umbrella.data.repository.datasource
 import com.umbrella.data.model.RestResponse
 import com.umbrella.data.model.article.Article
 import com.umbrella.data.model.article.ArticleListDto
-import com.umbrella.data.util.CallFake
-import com.umbrella.data.util.ErrorUtil
-import com.umbrella.data.util.Result
-import com.umbrella.data.util.toResult
+import com.umbrella.data.util.*
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 
@@ -58,6 +55,12 @@ private const val articleList = """
 
 internal class FakeRemoteArticleDataSourceImpl(private val json: Json, private val errorUtil: ErrorUtil) : RemoteArticleDataSource {
     override fun getArticleList(): Result<List<Article>> {
-        return CallFake.buildSuccess(json.decodeFromString<RestResponse<ArticleListDto>>(articleList)).toResult(errorUtil)
+        return CallFake.buildSuccess(json.decodeFromString<RestResponse<ArticleListDto>>(articleList)).toResult(errorUtil).map { data ->
+            val newList = mutableListOf<Article>()
+            (1..10).map {
+                newList.addAll(data)
+            }
+            newList
+        }
     }
 }
