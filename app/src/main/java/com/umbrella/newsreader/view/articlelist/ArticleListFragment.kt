@@ -5,7 +5,6 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.umbrella.data.model.article.ArticleHeader
 import com.umbrella.newsreader.R
@@ -32,10 +31,8 @@ class ArticleListFragment : Fragment(R.layout.list_with_toolbar) {
                 }
             }
         }
-        binding.rcv.apply {
+        binding.list.rcv.apply {
             adapter = articleAdapter
-            layoutManager = LinearLayoutManager(requireContext())
-            setHasFixedSize(true)
         }
         vm.data.launchAndCollectIn(viewLifecycleOwner) {
             articleAdapter.submitList(it)
