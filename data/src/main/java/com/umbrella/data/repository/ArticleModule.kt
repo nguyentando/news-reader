@@ -1,11 +1,13 @@
 package com.umbrella.data.repository
 
+import android.content.Context
 import com.umbrella.data.repository.datasource.FakeRemoteArticleDataSourceImpl
 import com.umbrella.data.repository.datasource.RemoteArticleDataSource
 import com.umbrella.data.util.ErrorUtil
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import kotlinx.serialization.json.Json
 import javax.inject.Singleton
@@ -15,8 +17,8 @@ import javax.inject.Singleton
 object ArticleModule {
     @Singleton
     @Provides
-    fun getRemoteArticleDataSource(json: Json, errorUtil: ErrorUtil): RemoteArticleDataSource {
-        return FakeRemoteArticleDataSourceImpl(json, errorUtil)
+    fun getRemoteArticleDataSource(@ApplicationContext context: Context, json: Json, errorUtil: ErrorUtil): RemoteArticleDataSource {
+        return FakeRemoteArticleDataSourceImpl(context, json, errorUtil)
     }
 
     @Singleton
