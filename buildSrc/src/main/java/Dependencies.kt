@@ -31,8 +31,8 @@ object Libs {
         const val fragment = "androidx.fragment:fragment-ktx:${Versions.fragmentKtx}"
         const val activity = "androidx.activity:activity-ktx:${Versions.activityKtx}"
         const val lifeCycle = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifeCycleKtx}"
-        const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifeCycleKtx}"
         const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifeCycleKtx}"
+        const val lifeCycleCommon = "androidx.lifecycle:lifecycle-common-java8:${Versions.lifeCycleKtx}"
     }
 
     object Kotlin {

@@ -39,6 +39,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":domain"))
+
     // kotlin
     implementation(Libs.Kotlin.std)
 
@@ -54,8 +56,8 @@ dependencies {
     implementation(Libs.Android.fragment)
     implementation(Libs.Android.activity)
     implementation(Libs.Android.lifeCycle)
-    implementation(Libs.Android.liveData)
     implementation(Libs.Android.viewModel)
+    implementation(Libs.Android.lifeCycleCommon)
 
     // dagger
     implementation(Libs.Injection.core)
