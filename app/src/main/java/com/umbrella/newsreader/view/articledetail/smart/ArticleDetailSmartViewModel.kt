@@ -61,6 +61,7 @@ class ArticleDetailSmartViewModel @Inject constructor(
                                 ArticleItemUI.Text(body)
                             }
                         }
+                        is ArticleBody.Caption -> ArticleItemUI.Caption(it.text)
                     }
                 }.let {
                     data.addAll(it)

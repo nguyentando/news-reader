@@ -7,6 +7,7 @@ import kotlinx.serialization.Serializable
 
 sealed class ArticleBody {
     data class Text(val text: String) : ArticleBody()
+    data class Caption(val text: String) : ArticleBody()
     data class Image(val url: String, val width: Int, val height: Int) : ArticleBody()
 }
 
@@ -19,7 +20,9 @@ data class ArticleBodyDto(
     @SerialName("type")
     val type: String? = null,
     @SerialName("width")
-    val width: Int? = null
+    val width: Int? = null,
+    @SerialName("subType")
+    val subType: String? = null,
 ) : MapDto<ArticleBody?> {
     override fun map(): ArticleBody? {
         return when (type) {
@@ -35,9 +38,18 @@ data class ArticleBodyDto(
                 )
             }
             "text" -> {
-                ArticleBody.Text(
-                    text = content.orEmpty()
-                )
+                when (subType) {
+                    "caption" -> {
+                        ArticleBody.Caption(
+                            text = content.orEmpty()
+                        )
+                    }
+                    else -> {
+                        ArticleBody.Text(
+                            text = content.orEmpty()
+                        )
+                    }
+                }
             }
             else -> return null
         }

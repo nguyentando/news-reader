@@ -5,10 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import com.bumptech.glide.RequestManager
 import com.umbrella.newsreader.R
-import com.umbrella.newsreader.databinding.ArticleDescriptionBinding
-import com.umbrella.newsreader.databinding.ArticleImageBinding
-import com.umbrella.newsreader.databinding.ArticleTextBinding
-import com.umbrella.newsreader.databinding.ArticleTitleBinding
+import com.umbrella.newsreader.databinding.*
 import com.umbrella.newsreader.model.ArticleItemUI
 import com.umbrella.newsreader.view.diffutil.ArticleItemUIDiffUtil
 import com.umbrella.newsreader.view.viewholder.ArticleDetailVH
@@ -29,6 +26,9 @@ class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : Li
             R.layout.article_image -> {
                 ArticleDetailVH.ArticleImageVH(requestManager, ArticleImageBinding.inflate(inflater, parent, false))
             }
+            R.layout.article_caption -> {
+                ArticleDetailVH.ArticleCaptionVH(ArticleCaptionBinding.inflate(inflater, parent, false))
+            }
             else -> throw IllegalArgumentException("Invalid viewType")
         }
     }
@@ -40,16 +40,17 @@ class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : Li
             is ArticleDetailVH.ArticleTitleVH -> holder.bind(item as ArticleItemUI.Title)
             is ArticleDetailVH.ArticleTextVH -> holder.bind(item as ArticleItemUI.Text)
             is ArticleDetailVH.ArticleImageVH -> holder.bind(item as ArticleItemUI.Image)
+            is ArticleDetailVH.ArticleCaptionVH -> holder.bind(item as ArticleItemUI.Caption)
         }
     }
 
     override fun getItemViewType(position: Int): Int {
-        return when (val item = getItem(position)) {
+        return when (getItem(position)) {
             is ArticleItemUI.Description -> R.layout.article_description
             is ArticleItemUI.Title -> R.layout.article_title
             is ArticleItemUI.Image -> R.layout.article_image
             is ArticleItemUI.Text -> R.layout.article_text
-            else -> throw IllegalStateException("Unknown type: ${item::class.java.simpleName}")
+            is ArticleItemUI.Caption -> R.layout.article_caption
         }
     }
 }

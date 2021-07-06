@@ -4,10 +4,7 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
 import com.umbrella.newsreader.R
-import com.umbrella.newsreader.databinding.ArticleDescriptionBinding
-import com.umbrella.newsreader.databinding.ArticleImageBinding
-import com.umbrella.newsreader.databinding.ArticleTextBinding
-import com.umbrella.newsreader.databinding.ArticleTitleBinding
+import com.umbrella.newsreader.databinding.*
 import com.umbrella.newsreader.model.ArticleItemUI
 import com.umbrella.newsreader.util.getDimen
 import com.umbrella.newsreader.util.loadImage
@@ -43,6 +40,12 @@ sealed class ArticleDetailVH(itemView: View) : RecyclerView.ViewHolder(itemView)
             }
             val height = width * ratio
             binding.root.loadImage(requestManager, item.url, width, height.toInt())
+        }
+    }
+
+    class ArticleCaptionVH(private val binding: ArticleCaptionBinding) : ArticleDetailVH(binding.root) {
+        fun bind(item: ArticleItemUI.Caption) {
+            binding.root.text = item.text
         }
     }
 }
