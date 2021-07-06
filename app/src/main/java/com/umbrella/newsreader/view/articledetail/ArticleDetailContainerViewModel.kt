@@ -6,8 +6,8 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class ArticleDetailViewModel @Inject constructor(
+class ArticleDetailContainerViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle
 ) : ViewModel() {
-    private val args = ArticleDetailFragmentArgs.fromSavedStateHandle(savedStateHandle).article
+    private val args = ArticleDetailContainerFragmentArgs.fromSavedStateHandle(savedStateHandle).article
 }
