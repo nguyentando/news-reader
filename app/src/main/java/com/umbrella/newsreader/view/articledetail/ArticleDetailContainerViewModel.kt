@@ -9,5 +9,5 @@ import javax.inject.Inject
 class ArticleDetailContainerViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle
 ) : ViewModel() {
-    private val args = ArticleDetailContainerFragmentArgs.fromSavedStateHandle(savedStateHandle).article
+    val args = ArticleDetailContainerFragmentArgs.fromSavedStateHandle(savedStateHandle).article
 }

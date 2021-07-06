@@ -2,13 +2,15 @@ package com.umbrella.newsreader.view.articledetail
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.umbrella.data.model.article.Article
+import com.umbrella.newsreader.util.getBundle
 import com.umbrella.newsreader.util.newInstanceFragment
 import com.umbrella.newsreader.view.articledetail.smart.ArticleDetailSmartFragment
 import com.umbrella.newsreader.view.articledetail.web.ArticleDetailIABFragment
 
 private const val SUPPORT_PAGE_NUMB = 2
 
-class ArticleDetailContainerAdapter(frag: Fragment) : FragmentStateAdapter(frag) {
+class ArticleDetailContainerAdapter(frag: Fragment, private val args: Article) : FragmentStateAdapter(frag) {
     companion object {
         const val WEB = "Web"
         const val SMART = "Smart"
@@ -23,10 +25,10 @@ class ArticleDetailContainerAdapter(frag: Fragment) : FragmentStateAdapter(frag)
     override fun createFragment(position: Int): Fragment {
         return when (positions[position]) {
             WEB -> {
-                newInstanceFragment<ArticleDetailIABFragment>(null)
+                newInstanceFragment<ArticleDetailIABFragment>(getBundle(args))
             }
             SMART -> {
-                newInstanceFragment<ArticleDetailSmartFragment>(null)
+                newInstanceFragment<ArticleDetailSmartFragment>(getBundle(args))
             }
             else -> {
                 throw IllegalStateException()

@@ -27,3 +27,11 @@ fun View.gone() {
 fun View.show() {
     visibility = View.VISIBLE
 }
+
+fun View.fadeIn(duration: Long = 300L) {
+    animate().alpha(1f).setDuration(duration).start()
+}
+
+fun View.fadeOut() {
+    animate().alpha(0f).setDuration(300).start()
+}
