@@ -50,14 +50,14 @@ dependencies {
     implementation(Libs.Android.recyclerView)
     implementation(Libs.Android.constraint)
     implementation(Libs.Android.viewPager)
-
-    // ktx
     implementation(Libs.Android.core)
     implementation(Libs.Android.fragment)
     implementation(Libs.Android.activity)
     implementation(Libs.Android.lifeCycle)
     implementation(Libs.Android.viewModel)
     implementation(Libs.Android.lifeCycleCommon)
+    implementation(Libs.Android.navFragment)
+    implementation(Libs.Android.navUI)
 
     // dagger
     implementation(Libs.Injection.core)

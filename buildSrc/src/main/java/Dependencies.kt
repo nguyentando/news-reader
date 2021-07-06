@@ -17,6 +17,7 @@ object Versions {
     const val hilt = "2.35"
     const val hiltWorkManager = "1.0.0"
     const val kotlinSerialization = "1.2.1"
+    const val nav = "2.4.0-alpha01"
 }
 
 object Libs {
@@ -24,8 +25,7 @@ object Libs {
         const val appCompat = "androidx.appcompat:appcompat:${Versions.supportLibrary}"
         const val material = "com.google.android.material:material:${Versions.material}"
         const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.rcv}"
-        const val constraint =
-            "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+        const val constraint = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
         const val viewPager = "androidx.viewpager2:viewpager2:${Versions.vPager}"
         const val core = "androidx.core:core-ktx:${Versions.coreKtx}"
         const val fragment = "androidx.fragment:fragment-ktx:${Versions.fragmentKtx}"
@@ -33,6 +33,8 @@ object Libs {
         const val lifeCycle = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifeCycleKtx}"
         const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifeCycleKtx}"
         const val lifeCycleCommon = "androidx.lifecycle:lifecycle-common-java8:${Versions.lifeCycleKtx}"
+        const val navFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.nav}"
+        const val navUI = "androidx.navigation:navigation-ui-ktx:${Versions.nav}"
     }
 
     object Kotlin {
@@ -92,8 +94,7 @@ object Plugins {
     const val kapt = "kapt"
     const val serialization = "kotlinx-serialization"
     const val hilt = "dagger.hilt.android.plugin"
-    const val googleService = "com.google.gms.google-services"
-    const val crash = "com.google.firebase.crashlytics"
+    const val safeArgs = "androidx.navigation.safeargs.kotlin"
 }
 
 object ClassPaths {
@@ -101,6 +102,5 @@ object ClassPaths {
     const val kotlinPlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val serialization = "org.jetbrains.kotlin:kotlin-serialization:${Versions.kotlin}"
     const val hilt = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
-    const val googleService = "com.google.gms:google-services:4.3.5"
-    const val crash = "com.google.firebase:firebase-crashlytics-gradle:2.2.0"
+    const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.nav}"
 }
