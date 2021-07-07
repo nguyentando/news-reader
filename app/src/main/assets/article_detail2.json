@@ -1,0 +1,85 @@
+{
+  "data": {
+    "content": {
+      "content_id": 39408736,
+      "title": "YouTuber accused of engineering multi-million-dollar pump-n-dump via Uniswap",
+      "description": "The YouTuber denied accusations he has rug-pulled on his followers while asserting that Million token is a “social project” that “should not be considered an investment.”",
+      "url": "https://cointelegraph.com/news/youtuber-accused-of-engineering-multi-million-pump-n-dump-via-uniswap",
+      "publisher_id": 21,
+      "publisher_name": "Brian Quarmby",
+      "publisher_icon": "https://images.cointelegraph.com/images/64_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8xZDAyM2M3YjhhNmFhM2U1MzUzYjQ5ZWU1NThmZGRkYi5qcGc=.jpg",
+      "image": "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvYzg5MGMyNDQtZTVhZi00NjI5LWIzNGYtMzU1ZTA3YWYwOTExLmpwZw==.jpg",
+      "body": [
+        {
+          "type": "image",
+          "content": "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvYzg5MGMyNDQtZTVhZi00NjI5LWIzNGYtMzU1ZTA3YWYwOTExLmpwZw==.jpg",
+          "width": 1434,
+          "height": 955
+        },
+        {
+          "type": "text",
+          "content": "An ex-Google tech lead and YouTuber with more than 1.1 million subscribers has been accused of engineering a multi-million-dollar “pump-and-dump” scheme.\n\nPatrick Shyu, known pseudonymously as TechLead on YouTube, launched the Million token (MM) via an initial DEX offering on leading decentralized exchange Uniswap on Thursday.\n\nThe project’s website describes Million as a pre-mined cryptocurrency with a fixed supply of 1 million tokens that are backed by one USD Coin (USDC) each per token. The website emphasizes that despite only being backed by $1 million worth of stablecoins, MM has “no maximum value.”\n\nAfter being priced at $1.00 on launch, MM saw a mammoth 3,500% increase within just three days to hit $36.87 on Sunday. The price has since crashed, declining by 58% to sit around $15.26 at the time of writing.\n\nThe immediate crash that followed Million’s price high has led to accusations the project is a pump-and-dump on Twitter, with user DCF GOD highlighting the large sums of liquidity that had been pulled from Uniswap by the same address that minted MM tokens.\n\n“By removing liquidity and not selling, he’s effectively selling without ‘selling.’ This way he doesn’t have to tell the community that he sold while they all bought, he just has to hold his initial promise of keeping 1m of usdc liquidity,” they argued."
+        },
+        {
+          "type": "text",
+          "content": "Shyu responded to the thread, labeling it “absolute FUD,” arguing, “This is literally how liquidity works in Uniswap V3 [...] liquidity ranges are created, you literally cannot do it any other way.”\n\nPopular commentator ChainlinkGod.eth 2.0 commented that TechLead had completely missed DCF’s point, stating, “You’ve created a ‘get rich quick’ scheme so you can dump on your followers, you’ve added liquidity when the price is low and removed it when the price was high and profited the difference in $USDC.”"
+        },
+        {
+          "type": "text",
+          "content": "<strong><i>Related: CoinMarketCap launches Ethereum token swaps powered by Uniswap</i></strong>"
+        },
+        {
+          "type": "text",
+          "content": "Shyu published a YouTube video on Tuesday addressing the accusations, denying that he “rug-pulled” investors by removing liquidity. However, the YouTuber also emphasized that MM “should not be considered an investment,” describing the project as a “social experiment”:"
+        },
+        {
+          "type": "text",
+          "content": "Million tokens should not be considered an investment by any means. This is a social experiment and really pure speculation. It’s kind of a game for us to see what happens with this, kind of like Dogecoin.",
+          "subType": "quote"
+        },
+        {
+          "type": "text",
+          "content": "<strong>Brian Quarmby</strong>"
+        }
+      ]
+    },
+    "related": {
+      "title": "RECOMMENDED",
+      "contents": [
+        {
+          "content_id": 39408735,
+          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
+          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
+          "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
+          "publisher_id": 20,
+          "publisher_name": "William Suberg",
+          "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
+          "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
+        },
+        {
+          "content_id": 39408736,
+          "title": "YouTuber accused of engineering multi-million-dollar pump-n-dump via Uniswap",
+          "description": "The YouTuber denied accusations he has rug-pulled on his followers while asserting that Million token is a “social project” that “should not be considered an investment.”",
+          "url": "https://cointelegraph.com/news/youtuber-accused-of-engineering-multi-million-pump-n-dump-via-uniswap",
+          "publisher_id": 21,
+          "publisher_name": "Brian Quarmby",
+          "publisher_icon": "https://images.cointelegraph.com/images/64_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8xZDAyM2M3YjhhNmFhM2U1MzUzYjQ5ZWU1NThmZGRkYi5qcGc=.jpg",
+          "image": "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvYzg5MGMyNDQtZTVhZi00NjI5LWIzNGYtMzU1ZTA3YWYwOTExLmpwZw==.jpg"
+        },
+        {
+          "content_id": 39408737,
+          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
+          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
+          "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
+          "publisher_id": 20,
+          "publisher_name": "William Suberg",
+          "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
+          "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
+        }
+      ]
+    }
+  },
+  "error_code": 0,
+  "error_message": "Success",
+  "server_time": 1625497740
+}

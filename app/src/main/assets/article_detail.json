@@ -1,14 +1,14 @@
 {
   "data": {
     "content": {
-      "content_id": 39391287,
+      "content_id": 39408735,
       "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
       "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
       "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
       "publisher_id": 20,
-      "publisher_name": "WILLIAM SUBERG",
+      "publisher_name": "William Suberg",
       "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
-      "images": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg",
+      "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg",
       "body": [
         {
           "type": "image",
@@ -58,7 +58,11 @@
         },
         {
           "type": "text",
-          "content": "The past seven days have been broadly kinder to altcoins, meanwhile, with many tokens up versus the same time last week while Bitcoin remains lower.\n\n<strong>Related: Top 5 cryptocurrencies to watch this week: BTC, ETH, UNI, ICP, AAVE</strong>\n\nEther (ETH), the largest altcoin by market capitalization, was in the red on Monday but still up 11% over the course of the week, trading at $2,213.\n\nAs Cointelegraph reported, Ether’s price is also showing strength against Bitcoin, with ETH/BTC targeting a popular range high of 0.075.\n\nOnly two of the top 50 cryptocurrencies by market cap saw positive price movements on the day, however, as Bitcoin’s sudden reversal took its toll.\n\nSlightly declining Bitcoin dominance provides a potential benefit to altcoins, which tend to perform best during periods of middling BTC action following major dips.\n\nThe views and opinions expressed here are solely those of the author and do not necessarily reflect the views of Cointelegraph.com. Every investment and trading move involves risk, you should conduct your own research when making a decision.\n\n"
+          "content": "The past seven days have been broadly kinder to altcoins, meanwhile, with many tokens up versus the same time last week while Bitcoin remains lower.\n\n<strong>Related: Top 5 cryptocurrencies to watch this week: BTC, ETH, UNI, ICP, AAVE</strong>\n\nEther (ETH), the largest altcoin by market capitalization, was in the red on Monday but still up 11% over the course of the week, trading at $2,213.\n\nAs Cointelegraph reported, Ether’s price is also showing strength against Bitcoin, with ETH/BTC targeting a popular range high of 0.075.\n\nOnly two of the top 50 cryptocurrencies by market cap saw positive price movements on the day, however, as Bitcoin’s sudden reversal took its toll.\n\nSlightly declining Bitcoin dominance provides a potential benefit to altcoins, which tend to perform best during periods of middling BTC action following major dips."
+        },
+        {
+          "type": "text",
+          "content": "<strong>William Suberg</strong>"
         }
       ]
     },
@@ -71,7 +75,7 @@
           "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
           "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
           "publisher_id": 20,
-          "publisher_name": "WILLIAM SUBERG",
+          "publisher_name": "William Suberg",
           "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
           "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
         },
@@ -81,7 +85,7 @@
           "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
           "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
           "publisher_id": 20,
-          "publisher_name": "WILLIAM SUBERG",
+          "publisher_name": "William Suberg",
           "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
           "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
         },
@@ -91,7 +95,7 @@
           "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
           "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
           "publisher_id": 20,
-          "publisher_name": "WILLIAM SUBERG",
+          "publisher_name": "William Suberg",
           "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
           "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
         }

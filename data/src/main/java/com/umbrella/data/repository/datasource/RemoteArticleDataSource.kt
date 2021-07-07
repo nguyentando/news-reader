@@ -31,14 +31,19 @@ internal class FakeRemoteArticleDataSourceImpl(private val context: Context, pri
             .toResult(errorUtil).map { data ->
             val newList = mutableListOf<ArticleHeader>()
             (1..10).map {
-                newList.addAll(data)
+                newList.addAll(data.shuffled())
             }
             newList
         }
     }
 
     override fun getArticleDetail(id: String): Result<ArticleDetail> {
-        return CallFake.buildSuccess(json.decodeFromString<RestResponse<ArticleDetailDto>>(context.getStringJson("article_detail.json")))
+        val jsonName = when (id) {
+            "39408735" -> "article_detail.json"
+            "39408736" -> "article_detail2.json"
+            else -> "article_detail3.json"
+        }
+        return CallFake.buildSuccess(json.decodeFromString<RestResponse<ArticleDetailDto>>(context.getStringJson(jsonName)))
             .toResult(errorUtil)
     }
 }

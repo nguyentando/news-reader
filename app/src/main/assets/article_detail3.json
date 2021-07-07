@@ -1,0 +1,126 @@
+{
+  "data": {
+    "content": {
+      "content_id": 39408737,
+      "title": "Ethereum price can gain 40% on Bitcoin, argues analyst as London fork nears",
+      "description": "Technical setups, coupled with optimistic fundamentals, project Ethereum would rise sharply against Bitcoin in the coming weeks.\n\n",
+      "url": "https://cointelegraph.com/news/ethereum-price-can-gain-40-on-bitcoin-argues-analyst-as-london-fork-nears",
+      "publisher_id": 22,
+      "publisher_name": "Yashu Gola",
+      "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
+      "image": "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvYTBmNTBjM2UtNzc0Yi00YzI5LWE5ZTEtYzdlMjc0OWI1MzQ1LmpwZw==.jpg",
+      "body": [
+        {
+          "type": "image",
+          "content": "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvYTBmNTBjM2UtNzc0Yi00YzI5LWE5ZTEtYzdlMjc0OWI1MzQ1LmpwZw==.jpg",
+          "width": 1434,
+          "height": 955
+        },
+        {
+          "type": "text",
+          "content": "Ether (ETH) could rise by almost 40% against Bitcoin (BTC) in the coming trading sessions, according to one analyst. \n\nSo believes Michaël van de Poppe, an Amsterdam-based market analyst who predicts that the ETH/BTC exchange rate will climb from its current 0.05–0.06 BTC range to as high as 0.07 BTC soon.\n\nThe technical chartist based his bullish analogy on the pair’s support level at 0.063 BTC. The price floor was instrumental in maintaining ETH/BTC’s bullish bias during the mid-May 2021 notorious crypto market crash. It also served as solid support during the pair’s uptrend in the early May 2020 trading session. \n\n“Ethereum is continuing the run against the Bitcoin pair,” said van de Poppe."
+        },
+        {
+          "type": "text",
+          "content": "A beautiful flip of the 0.063 regions and crawling upwards at this stage. As long as 0.063 holds, I’m expecting continuation to 0.075.",
+          "subType": "quote"
+        },
+        {
+          "type": "image",
+          "content": "https://s3.cointelegraph.com/uploads/2021-07/f699e0f5-ebc6-4e85-8666-13657c2cecfd.png",
+          "width": 1791,
+          "height": 1092
+        },
+        {
+          "type": "text",
+          "content": "Ethereum trade setup presented by Michaël van de Poppe. Source: TradingView",
+          "subType": "caption"
+        },
+        {
+          "type": "text",
+          "content": "What the Fork",
+          "subType": "h5"
+        },
+        {
+          "type": "text",
+          "content": "The bullish analogy appeared right as ETH/BTC stretched its price rebound, from its June 27 low of 0.0552 BTC, by 21.28%. It showed that more traders preferred to sell their Bitcoin holdings to seek opportunities in the Ether market in recent days. On a year-to-date timeframe, the second-largest cryptocurrency had already surged by more than 160% against Bitcoin.\n\nThe transition took cues from the euphoria surrounding Ethereum’s planned consensus layer transition from its energy-intensive proof-of-work (PoW) to a more scalable and cheaper proof-of-stake (PoS). The project launched the first phase, called Phase 0 or Beacon Chain, in December 2020. It introduced a so-called sharded network architecture to the Ethereum blockchain.\n\nSharding is a scaling technique that segments the Ethereum network into various groups (called shards). It then assigns nodes to each shard. These nodes have to monitor and validate their respective shards, thereby removing the need for each node to validate every transaction, which is the case in the current PoW consensus.\n\nThe next phase that brings Ethereum closer to PoS is the Ethereum improvement Proposal 1559, also known as the London hard fork. The upgrade proposes to replace Ethereum’s “first-price auction” fee model with a base network fee, modifiable per the network’s demand. It hopes to solve the blockchain’s higher gas and transaction fee problem. It also aims to make ETH a deflationary token by burning the base network fee."
+        },
+        {
+          "type": "text",
+          "content": "Therefore...",
+          "subType": "h5"
+        },
+        {
+          "type": "text",
+          "content": "Due to impending scarcity, analysts and traders see huge upside potential in the Ethereum market. The bullish formula is simple: Ether’s drying supply in circulation against rising demand would make it more valuable than it is currently. And as a result, the cryptocurrency has been rising against Bitcoin so far into 2021.\n\nAdditionally, CryptoQuant, a South Korea-based crypto analytics firm, reported a rising holding behavior among Ether traders, taking cues from their declining ETH reserves across all the cryptocurrency exchanges."
+        },
+        {
+          "type": "image",
+          "content": "https://s3.cointelegraph.com/uploads/2021-07/cfe6cf84-5bfb-4d5c-9c76-237a480a1916.jpg",
+          "width": 1054,
+          "height": 731
+        },
+        {
+          "type": "text",
+          "content": "Ether prices typically move inversely to its reserves across cryptocurrency exchanges. Source: CryptoQuant",
+          "subType": "caption"
+        },
+        {
+          "type": "text",
+          "content": "The amount of ETH held in all exchanges’ wallets reached a two-and-a-half-year low on Monday.\n\nThe reduction of Ether on exchanges is clearly a positive indication that takes backing from investors’ trust in the future of the blockchain, Yuriy Mazur, head of data analytics at CEX.IO, explained.\n\nThe executive added that investors are taking alternative means to secure their ETH holdings during its price correction instead of dumping them outright for cash. He cited ETH-based investments into the decentralized finance sector as the prime example.\n\n“Ethereum total value locked has soared in the past year. Staking in the forthcoming Ethereum 2.0 (proof-of-stake consensus model) has also absorbed the Ethereum leaving trading platforms,” Mazur said, adding:\n\n"
+        },
+        {
+          "type": "text",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "The depletion of Ether on exchanges will contribute to a circulation scarcity that can have a positive impact on price.",
+          "subType": "quote"
+        },
+        {
+          "type": "text",
+          "content": "<strong>Yashu Gola</strong>"
+        }
+      ]
+    },
+    "related": {
+      "title": "RECOMMENDED",
+      "contents": [
+        {
+          "content_id": 39408735,
+          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
+          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
+          "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
+          "publisher_id": 20,
+          "publisher_name": "William Suberg",
+          "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
+          "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
+        },
+        {
+          "content_id": 39408736,
+          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
+          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
+          "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
+          "publisher_id": 20,
+          "publisher_name": "William Suberg",
+          "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
+          "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
+        },
+        {
+          "content_id": 39408737,
+          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
+          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
+          "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
+          "publisher_id": 20,
+          "publisher_name": "William Suberg",
+          "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
+          "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
+        }
+      ]
+    }
+  },
+  "error_code": 0,
+  "error_message": "Success",
+  "server_time": 1625497740
+}
