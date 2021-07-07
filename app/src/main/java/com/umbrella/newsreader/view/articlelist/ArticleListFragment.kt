@@ -35,7 +35,7 @@ class ArticleListFragment : Fragment(R.layout.list_with_toolbar) {
         binding.list.rcv.apply {
             adapter = articleAdapter
         }
-        vm.data.launchAndCollectIn(viewLifecycleOwner) {
+        vm.articleHeaderItemUIList.launchAndCollectIn(viewLifecycleOwner) {
             articleAdapter.submitList(it)
         }
     }

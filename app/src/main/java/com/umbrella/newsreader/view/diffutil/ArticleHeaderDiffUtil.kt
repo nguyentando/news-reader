@@ -1,14 +1,14 @@
 package com.umbrella.newsreader.view.diffutil
 
 import androidx.recyclerview.widget.DiffUtil
-import com.umbrella.data.model.article.ArticleHeader
+import com.umbrella.newsreader.model.ArticleHeaderItemUI
 
-class ArticleHeaderDiffUtil : DiffUtil.ItemCallback<ArticleHeader>() {
-    override fun areItemsTheSame(oldItem: ArticleHeader, newItem: ArticleHeader): Boolean {
+class ArticleHeaderDiffUtil : DiffUtil.ItemCallback<ArticleHeaderItemUI>() {
+    override fun areItemsTheSame(oldItem: ArticleHeaderItemUI, newItem: ArticleHeaderItemUI): Boolean {
         return oldItem == newItem
     }
 
-    override fun areContentsTheSame(oldItem: ArticleHeader, newItem: ArticleHeader): Boolean {
+    override fun areContentsTheSame(oldItem: ArticleHeaderItemUI, newItem: ArticleHeaderItemUI): Boolean {
         return true
     }
 }

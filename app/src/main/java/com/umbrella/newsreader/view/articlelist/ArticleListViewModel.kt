@@ -2,11 +2,10 @@ package com.umbrella.newsreader.view.articlelist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.umbrella.data.model.article.ArticleHeader
-import com.umbrella.data.util.onError
-import com.umbrella.data.util.onSuccess
+import com.umbrella.data.util.Result
 import com.umbrella.domain.usecase.article.GetArticleListParam
 import com.umbrella.domain.usecase.article.GetArticleListUseCase
+import com.umbrella.newsreader.view.delegate.ArticleListDelegate
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -15,19 +14,24 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ArticleListViewModel @Inject constructor(
-    private val getArticleListUseCase: GetArticleListUseCase
-) : ViewModel() {
-    private val _data = MutableStateFlow<List<ArticleHeader>>(emptyList())
-    val data: StateFlow<List<ArticleHeader>> = _data
+    private val getArticleListUseCase: GetArticleListUseCase,
+    private val articleListDelegate: ArticleListDelegate
+) : ViewModel(), ArticleListDelegate by articleListDelegate {
 
     private val _showError = MutableStateFlow<String?>(null)
     val showError: StateFlow<String?> = _showError
 
     init {
+
         viewModelScope.launch {
-            getArticleListUseCase(GetArticleListParam())
-                .onSuccess { _data.value = it }
-                .onError { _showError.value = it.toString() }
+            when (val result = getArticleListUseCase(GetArticleListParam())) {
+                is Result.Error -> {
+                    // TODO: 07/07/2021 handle show error view
+                }
+                is Result.Success -> {
+                    parseArticleHeaderList(result.data)
+                }
+            }
         }
     }
 }

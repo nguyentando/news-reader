@@ -14,6 +14,7 @@ import com.umbrella.domain.usecase.article.GetArticleDetailUseCase
 import com.umbrella.newsreader.model.ArticleItemUI
 import com.umbrella.newsreader.util.HtmlTagHandler
 import com.umbrella.newsreader.util.SavedStateHandleManager
+import com.umbrella.newsreader.view.delegate.ArticleListDelegate
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -29,7 +30,8 @@ class ArticleDetailSmartViewModel @Inject constructor(
     private val getArticleDetailUseCase: GetArticleDetailUseCase,
     private val htmlTagHandler: HtmlTagHandler,
     @IoDispatcher private val ioDispatcher: CoroutineDispatcher,
-) : ViewModel() {
+    private val articleListDelegate: ArticleListDelegate
+) : ViewModel(), ArticleListDelegate by articleListDelegate {
     private val articleHeader = savedStateHandleManager.getNavArgs<ArticleHeader>(savedStateHandle)
     private val headerUIList = articleHeader.let {
         listOf(
@@ -39,22 +41,21 @@ class ArticleDetailSmartViewModel @Inject constructor(
     }
 
     // show header from the savedStateHandle first
-    private val _data = MutableStateFlow(headerUIList)
-    val data: StateFlow<List<ArticleItemUI>> = _data
-    private val _footerData = MutableStateFlow<List<ArticleHeader>>(emptyList())
-    val footerData: StateFlow<List<ArticleHeader>> = _footerData
+    private val _articleItemUIList = MutableStateFlow(headerUIList)
+    val articleItemUIList: StateFlow<List<ArticleItemUI>> = _articleItemUIList
 
-    // then call the API to get the body
     init {
+        // then call the API to get the body
         viewModelScope.launch {
             getArticleDetailUseCase(GetArticleDetailParam(articleHeader.id)).data?.let {
                 val data = headerUIList.toMutableList()
-                it.body.map {
-                    when (it) {
-                        is ArticleBody.Image -> ArticleItemUI.Image(it.url, it.width, it.height)
-                        is ArticleBody.Text -> {
-                            // parse the text in bgThreat
-                            withContext(ioDispatcher) {
+                // parse in bgThreat
+                withContext(ioDispatcher) {
+                    it.body.map {
+                        when (it) {
+                            is ArticleBody.Image -> ArticleItemUI.Image(it.url, it.width, it.height)
+                            is ArticleBody.Text -> {
+
                                 val body = if (Build.VERSION.SDK_INT >= 24) {
                                     Html.fromHtml(it.text, Html.FROM_HTML_MODE_LEGACY, null, htmlTagHandler)
                                 } else {
@@ -62,10 +63,10 @@ class ArticleDetailSmartViewModel @Inject constructor(
                                 }
                                 ArticleItemUI.Text(body)
                             }
+                            is ArticleBody.Caption -> ArticleItemUI.Caption(it.text)
+                            is ArticleBody.H5 -> ArticleItemUI.H5(it.text)
+                            is ArticleBody.Quote -> ArticleItemUI.Quote(it.text)
                         }
-                        is ArticleBody.Caption -> ArticleItemUI.Caption(it.text)
-                        is ArticleBody.H5 -> ArticleItemUI.H5(it.text)
-                        is ArticleBody.Quote -> ArticleItemUI.Quote(it.text)
                     }
                 }.let {
                     data.addAll(it)
@@ -74,8 +75,8 @@ class ArticleDetailSmartViewModel @Inject constructor(
                     data.add(ArticleItemUI.Divider)
                     data.add(ArticleItemUI.FooterTitle(it.title))
                 }
-                _data.value = data
-                _footerData.value = it.footer?.content ?: emptyList()
+                _articleItemUIList.value = data
+                parseArticleHeaderList(it.footer?.content ?: emptyList())
             }
             // TODO: 06/07/2021 handle error view }
         }

@@ -34,10 +34,10 @@ class ArticleDetailSmartFragment : Fragment(R.layout.list) {
             adapter = concatAdapter
             addItemDecoration(ArticleDetailSmartDecorator(requireContext()))
         }
-        vm.data.launchAndCollectIn(viewLifecycleOwner) {
+        vm.articleItemUIList.launchAndCollectIn(viewLifecycleOwner) {
             articleDetailSmartAdapter.submitList(it)
         }
-        vm.footerData.launchAndCollectIn(viewLifecycleOwner) {
+        vm.articleHeaderItemUIList.launchAndCollectIn(viewLifecycleOwner) {
             articleAdapter.submitList(it)
         }
     }
