@@ -10,5 +10,6 @@ sealed class ArticleItemUI {
     data class Caption(val text: String) : ArticleItemUI()
     data class H5(val text: String) : ArticleItemUI()
     data class FooterTitle(val text: String) : ArticleItemUI()
+    data class Quote(val text: String) : ArticleItemUI()
     object Divider : ArticleItemUI()
 }

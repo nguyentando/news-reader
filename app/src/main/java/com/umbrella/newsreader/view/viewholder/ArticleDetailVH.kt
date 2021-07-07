@@ -62,4 +62,10 @@ sealed class ArticleDetailVH(itemView: View) : RecyclerView.ViewHolder(itemView)
             binding.root.text = item.text
         }
     }
+
+    class ArticleQuote(private val binding: ArticleQuoteBinding) : ArticleDetailVH(binding.root) {
+        fun bind(item: ArticleItemUI.Quote) {
+            binding.root.text = item.text
+        }
+    }
 }
