@@ -18,15 +18,15 @@
         },
         {
           "type": "text",
-          "content": "<p>An ex-Google tech lead and YouTuber with more than 1.1 million subscribers has been accused of engineering a multi-million-dollar “pump-and-dump” scheme.</p><p>Patrick Shyu, known pseudonymously as TechLead on YouTube, launched the Million token (MM) via an initial DEX offering on leading decentralized exchange Uniswap on Thursday.</p><p>The project’s website describes Million as a pre-mined cryptocurrency with a fixed supply of 1 million tokens that are backed by one USD Coin (USDC) each per token. The website emphasizes that despite only being backed by $1 million worth of stablecoins, MM has “no maximum value.”</p><p>After being priced at $1.00 on launch, MM saw a mammoth 3,500% increase within just three days to hit $36.87 on Sunday. The price has since crashed, declining by 58% to sit around $15.26 at the time of writing.</p><p>The immediate crash that followed Million’s price high has led to accusations the project is a pump-and-dump on Twitter, with user DCF GOD highlighting the large sums of liquidity that had been pulled from Uniswap by the same address that minted MM tokens.</p><p>“By removing liquidity and not selling, he’s effectively selling without ‘selling.’ This way he doesn’t have to tell the community that he sold while they all bought, he just has to hold his initial promise of keeping 1m of usdc liquidity,” they argued.</p>"
+          "content": "An ex-Google tech lead and YouTuber with more than 1.1 million subscribers has been accused of engineering a multi-million-dollar “pump-and-dump” scheme.<p>Patrick Shyu, known pseudonymously as TechLead on YouTube, launched the Million token (MM) via an initial DEX offering on leading decentralized exchange Uniswap on Thursday.</p><p>The project’s website describes Million as a pre-mined cryptocurrency with a fixed supply of 1 million tokens that are backed by one USD Coin (USDC) each per token. The website emphasizes that despite only being backed by $1 million worth of stablecoins, MM has “no maximum value.”</p><p>After being priced at $1.00 on launch, MM saw a mammoth 3,500% increase within just three days to hit $36.87 on Sunday. The price has since crashed, declining by 58% to sit around $15.26 at the time of writing.</p><p>The immediate crash that followed Million’s price high has led to accusations the project is a pump-and-dump on Twitter, with user DCF GOD highlighting the large sums of liquidity that had been pulled from Uniswap by the same address that minted MM tokens.</p>“By removing liquidity and not selling, he’s effectively selling without ‘selling.’ This way he doesn’t have to tell the community that he sold while they all bought, he just has to hold his initial promise of keeping 1m of usdc liquidity,” they argued."
         },
         {
           "type": "text",
-          "content": "Shyu responded to the thread, labeling it “absolute FUD,” arguing, “This is literally how liquidity works in Uniswap V3 [...] liquidity ranges are created, you literally cannot do it any other way.”\n\nPopular commentator ChainlinkGod.eth 2.0 commented that TechLead had completely missed DCF’s point, stating, “You’ve created a ‘get rich quick’ scheme so you can dump on your followers, you’ve added liquidity when the price is low and removed it when the price was high and profited the difference in $USDC.”"
+          "content": "Shyu responded to the thread, labeling it “absolute FUD,” arguing, “This is literally how liquidity works in Uniswap V3 [...] liquidity ranges are created, you literally cannot do it any other way.”<br>Popular commentator ChainlinkGod.eth 2.0 commented that TechLead had completely missed DCF’s point, stating, “You’ve created a ‘get rich quick’ scheme so you can dump on your followers, you’ve added liquidity when the price is low and removed it when the price was high and profited the difference in $USDC.”"
         },
         {
           "type": "text",
-          "content": "<strong><i>Related: CoinMarketCap launches Ethereum token swaps powered by Uniswap</i></strong>"
+          "content": "<strong><i>Related: <a href=\"https://cointelegraph.com/news/coinmarketcap-launches-ethereum-token-swaps-powered-by-uniswap\"CoinMarketCap launches Ethereum token swaps powered by Uniswap</a></i></strong>"
         },
         {
           "type": "text",
@@ -68,13 +68,13 @@
         },
         {
           "content_id": 39408737,
-          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
-          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
-          "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
-          "publisher_id": 20,
-          "publisher_name": "William Suberg",
-          "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
-          "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
+          "title": "Ethereum price can gain 40% on Bitcoin, argues analyst as London fork nears",
+          "description": "Technical setups, coupled with optimistic fundamentals, project Ethereum would rise sharply against Bitcoin in the coming weeks.",
+          "url": "https://cointelegraph.com/news/ethereum-price-can-gain-40-on-bitcoin-argues-analyst-as-london-fork-nears",
+          "publisher_id": 22,
+          "publisher_name": "Yashu Gola",
+          "publisher_icon": "https://images.cointelegraph.com/images/64_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy82NGIxNGE3MjIwNGU3ZmRjOGM0MmUzOTgxNGI2YmUzZS5qcGc=.jpg",
+          "image": "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvYTBmNTBjM2UtNzc0Yi00YzI5LWE5ZTEtYzdlMjc0OWI1MzQ1LmpwZw==.jpg"
         }
       ]
     }

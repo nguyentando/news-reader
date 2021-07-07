@@ -31,7 +31,7 @@ internal class FakeRemoteArticleDataSourceImpl(private val context: Context, pri
             .toResult(errorUtil).map { data ->
             val newList = mutableListOf<ArticleHeader>()
             (1..10).map {
-                newList.addAll(data.shuffled())
+                newList.addAll(data)
             }
             newList
         }
