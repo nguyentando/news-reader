@@ -2,7 +2,6 @@ package com.umbrella.newsreader.util
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.umbrella.newsreader.R
 
 inline fun <reified T : Fragment> newInstanceFragment(bundle: Bundle?): T {
     return T::class.java.newInstance().apply {
@@ -15,14 +14,14 @@ fun Fragment.getDimen(dimenRes: Int): Float {
 }
 
 val Fragment.spacePrettySmall
-    get() = getDimen(R.dimen.space_pretty_small).toInt()
+    get() = requireContext().spacePrettySmall
 val Fragment.spaceNormal
-    get() = getDimen(R.dimen.space_normal).toInt()
+    get() = requireContext().spaceNormal
 val Fragment.spaceSmall
-    get() = getDimen(R.dimen.space_small).toInt()
+    get() = requireContext().spaceSmall
 val Fragment.spaceLarge
-    get() = getDimen(R.dimen.space_large).toInt()
+    get() = requireContext().spaceLarge
 val Fragment.spaceTiny
-    get() = getDimen(R.dimen.space_tiny).toInt()
+    get() = requireContext().spaceTiny
 val Fragment.spaceAboveNormal
-    get() = getDimen(R.dimen.space_above_normal).toInt()
+    get() = requireContext().spaceAboveNormal

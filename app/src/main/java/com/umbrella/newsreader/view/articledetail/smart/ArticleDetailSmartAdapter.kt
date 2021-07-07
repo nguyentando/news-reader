@@ -32,6 +32,12 @@ class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : Li
             R.layout.article_h5 -> {
                 ArticleDetailVH.ArticleH5VH(ArticleH5Binding.inflate(inflater, parent, false))
             }
+            R.layout.article_divider -> {
+                ArticleDetailVH.ArticleDivider(ArticleDividerBinding.inflate(inflater, parent, false))
+            }
+            R.layout.article_footer_title -> {
+                ArticleDetailVH.ArticleFooterTitle(ArticleFooterTitleBinding.inflate(inflater, parent, false))
+            }
             else -> throw IllegalArgumentException("Invalid viewType")
         }
     }
@@ -45,6 +51,9 @@ class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : Li
             is ArticleDetailVH.ArticleImageVH -> holder.bind(item as ArticleItemUI.Image)
             is ArticleDetailVH.ArticleCaptionVH -> holder.bind(item as ArticleItemUI.Caption)
             is ArticleDetailVH.ArticleH5VH -> holder.bind(item as ArticleItemUI.H5)
+            is ArticleDetailVH.ArticleDivider -> {
+            }
+            is ArticleDetailVH.ArticleFooterTitle -> holder.bind(item as ArticleItemUI.FooterTitle)
         }
     }
 
@@ -56,6 +65,8 @@ class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : Li
             is ArticleItemUI.Text -> R.layout.article_text
             is ArticleItemUI.Caption -> R.layout.article_caption
             is ArticleItemUI.H5 -> R.layout.article_h5
+            ArticleItemUI.Divider -> R.layout.article_divider
+            is ArticleItemUI.FooterTitle -> R.layout.article_footer_title
         }
     }
 }

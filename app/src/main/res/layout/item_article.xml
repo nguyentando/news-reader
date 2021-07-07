@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?attr/selectableItemBackground"
-    android:padding="@dimen/space_pretty_small">
+    android:paddingHorizontal="@dimen/space_hoz_article_detail"
+    android:paddingVertical="@dimen/space_pretty_small">
 
     <com.umbrella.newsreader.widget.AspectRatioImageView
         android:id="@+id/imgv"

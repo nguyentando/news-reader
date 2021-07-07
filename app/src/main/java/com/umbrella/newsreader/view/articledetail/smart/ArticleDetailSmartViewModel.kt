@@ -41,6 +41,8 @@ class ArticleDetailSmartViewModel @Inject constructor(
     // show header from the savedStateHandle first
     private val _data = MutableStateFlow(headerUIList)
     val data: StateFlow<List<ArticleItemUI>> = _data
+    private val _footerData = MutableStateFlow<List<ArticleHeader>>(emptyList())
+    val footerData: StateFlow<List<ArticleHeader>> = _footerData
 
     // then call the API to get the body
     init {
@@ -67,8 +69,12 @@ class ArticleDetailSmartViewModel @Inject constructor(
                 }.let {
                     data.addAll(it)
                 }
-                // TODO: 06/07/2021 handle footer
+                it.footer?.let {
+                    data.add(ArticleItemUI.Divider)
+                    data.add(ArticleItemUI.FooterTitle(it.title))
+                }
                 _data.value = data
+                _footerData.value = it.footer?.content ?: emptyList()
             }
             // TODO: 06/07/2021 handle error view }
         }

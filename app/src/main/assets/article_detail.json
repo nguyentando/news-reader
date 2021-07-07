@@ -18,7 +18,7 @@
         },
         {
           "type": "text",
-          "content": "Bitcoin (<a href=\"https://cointelegraph.com/bitcoin-price\">BTC</a>) traded at crucial support near ${'$'}33,000 on Monday after a weekend of gains disappeared in hours."
+          "content": "Bitcoin (<a href=\"https://cointelegraph.com/bitcoin-price\">BTC</a>) traded at crucial support near $33,000 on Monday after a weekend of gains disappeared in hours."
         },
         {
           "type": "image",
@@ -62,39 +62,38 @@
         }
       ]
     },
-    "content_filter": "1,2",
     "related": {
-      "title": "Tin khác",
+      "title": "RECOMMENDED",
       "contents": [
         {
           "content_id": 39408735,
-          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to ${'$'}46.5K bull target",
-          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer ${'$'}50,000 providing a frame of reference for bulls.",
+          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
+          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
           "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
           "publisher_id": 20,
           "publisher_name": "WILLIAM SUBERG",
           "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
-          "images": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
+          "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
         },
         {
           "content_id": 39408736,
-          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to ${'$'}46.5K bull target",
-          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer ${'$'}50,000 providing a frame of reference for bulls.",
+          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
+          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
           "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
           "publisher_id": 20,
           "publisher_name": "WILLIAM SUBERG",
           "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
-          "images": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
+          "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
         },
         {
           "content_id": 39408737,
-          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to ${'$'}46.5K bull target",
-          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer ${'$'}50,000 providing a frame of reference for bulls.",
+          "title": "BTC price drops to fill Bitcoin futures gap as focus turns to $46.5K bull target",
+          "description": "The latest CME futures gap is filled within hours on Monday, with an attractive gap nearer $50,000 providing a frame of reference for bulls.",
           "url": "https://cointelegraph.com/news/btc-price-drops-to-fill-bitcoin-futures-gap-as-focus-turns-to-46-5k-bull-target",
           "publisher_id": 20,
           "publisher_name": "WILLIAM SUBERG",
           "publisher_icon": "https://images.cointelegraph.com/images/300_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy84NDc5ZWQyNTliYTNmYjQyNmY4YWZkNWMyMDQzZmNmYi5qcGc=.jpg",
-          "images": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
+          "image": "https://images.cointelegraph.com/images/1276_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDcvOTRhOThhNzMtMTMxNC00OGYyLTlhYzQtMzA4Y2ZjYTY4NmY0LmpwZw==.jpg"
         }
       ]
     }
