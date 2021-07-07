@@ -26,5 +26,21 @@
         <argument
             android:name="article"
             app:argType="com.umbrella.data.model.article.ArticleHeader" />
+        <action
+            android:id="@+id/action_articleDetailFragment_to_imageViewerFragment"
+            app:destination="@id/imageViewerFragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/stand_still"
+            app:popEnterAnim="@anim/stand_still"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageViewerFragment"
+        android:name="com.umbrella.newsreader.view.imageviewer.ImageViewerFragment"
+        android:label="ImageViewerFragment"
+        tools:layout="@layout/image_viewer">
+        <argument
+            android:name="imageViewerModel"
+            app:argType="com.umbrella.newsreader.model.ImageViewerModel" />
     </fragment>
 </navigation>

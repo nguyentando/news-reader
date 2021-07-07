@@ -29,7 +29,7 @@ sealed class ArticleDetailVH(itemView: View) : RecyclerView.ViewHolder(itemView)
         }
     }
 
-    class ArticleImageVH(private val requestManager: RequestManager, private val binding: ArticleImageBinding) : ArticleDetailVH(binding.root) {
+    class ArticleImageVH(private val requestManager: RequestManager, val binding: ArticleImageBinding) : ArticleDetailVH(binding.root) {
         fun bind(item: ArticleItemUI.Image) {
             val ratio = item.height / item.width.toFloat()
             binding.root.aspectRatio = ratio

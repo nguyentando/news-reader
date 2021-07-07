@@ -3,6 +3,9 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven {
+            setUrl("https://www.jitpack.io")
+        }
     }
     dependencies {
         classpath(ClassPaths.gradlePlugin)
@@ -17,6 +20,9 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        maven {
+            setUrl("https://www.jitpack.io")
+        }
     }
 }
 

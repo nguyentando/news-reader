@@ -75,6 +75,7 @@ dependencies {
 
     // helper
     implementation(Libs.Helper.log)
+    implementation(Libs.Helper.photoView)
 
     // thread
     implementation(Libs.Thread.core)

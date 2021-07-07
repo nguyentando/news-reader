@@ -18,6 +18,7 @@ object Versions {
     const val hiltWorkManager = "1.0.0"
     const val kotlinSerialization = "1.2.1"
     const val nav = "2.4.0-alpha01"
+    const val photoView = "2.0.0"
 }
 
 object Libs {
@@ -58,6 +59,7 @@ object Libs {
         const val log = "com.jakewharton.timber:timber:${Versions.log}"
         const val parser =
             "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinSerialization}"
+        const val photoView = "com.github.chrisbanes:PhotoView:${Versions.photoView}"
     }
 
     object Thread {

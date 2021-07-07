@@ -1,6 +1,7 @@
 package com.umbrella.newsreader.view.articledetail.smart
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import com.bumptech.glide.RequestManager
@@ -11,6 +12,8 @@ import com.umbrella.newsreader.view.diffutil.ArticleItemUIDiffUtil
 import com.umbrella.newsreader.view.viewholder.ArticleDetailVH
 
 class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : ListAdapter<ArticleItemUI, ArticleDetailVH>(ArticleItemUIDiffUtil()) {
+    var callback: Callback? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleDetailVH {
         val inflater = LayoutInflater.from(parent.context)
         return when (viewType) {
@@ -24,7 +27,16 @@ class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : Li
                 ArticleDetailVH.ArticleTextVH(ArticleTextBinding.inflate(inflater, parent, false))
             }
             R.layout.article_image -> {
-                ArticleDetailVH.ArticleImageVH(requestManager, ArticleImageBinding.inflate(inflater, parent, false))
+                ArticleDetailVH.ArticleImageVH(requestManager, ArticleImageBinding.inflate(inflater, parent, false)).apply {
+                    itemView.setOnClickListener { view ->
+                        val pos = bindingAdapterPosition
+                        if (pos >= 0) {
+                            getItem(pos)?.let {
+                                callback?.onClickImage(view, pos, (it as ArticleItemUI.Image).url)
+                            }
+                        }
+                    }
+                }
             }
             R.layout.article_caption -> {
                 ArticleDetailVH.ArticleCaptionVH(ArticleCaptionBinding.inflate(inflater, parent, false))
@@ -73,5 +85,9 @@ class ArticleDetailSmartAdapter(private val requestManager: RequestManager) : Li
             is ArticleItemUI.FooterTitle -> R.layout.article_footer_title
             is ArticleItemUI.Quote -> R.layout.article_quote
         }
+    }
+
+    interface Callback {
+        fun onClickImage(view: View, pos: Int, image: String)
     }
 }
