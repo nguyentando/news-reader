@@ -24,6 +24,8 @@ class ArticleDetailIABFragment : Fragment(R.layout.article_detail_iab) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.webView.apply {
+            // chromium, enable hardware acceleration
+            setLayerType(View.LAYER_TYPE_HARDWARE, null);
             webChromeClient = object : WebChromeClient() {
                 override fun onProgressChanged(view: WebView?, newProgress: Int) {
                     super.onProgressChanged(view, newProgress)
