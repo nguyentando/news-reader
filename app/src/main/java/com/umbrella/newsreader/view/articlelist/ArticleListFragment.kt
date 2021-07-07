@@ -10,6 +10,7 @@ import com.umbrella.data.model.article.ArticleHeader
 import com.umbrella.newsreader.R
 import com.umbrella.newsreader.databinding.ListWithToolbarBinding
 import com.umbrella.newsreader.util.launchAndCollectIn
+import com.umbrella.newsreader.util.safeNavigate
 import com.umbrella.newsreader.util.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -27,7 +28,7 @@ class ArticleListFragment : Fragment(R.layout.list_with_toolbar) {
         val articleAdapter = ArticleAdapter(Glide.with(this)).apply {
             callback = object : ArticleAdapter.Callback {
                 override fun onClick(view: View, pos: Int, item: ArticleHeader) {
-                    view.findNavController().navigate(ArticleListFragmentDirections.actionArticleListFragmentToArticleDetailFragment(item))
+                    view.findNavController().safeNavigate(ArticleListFragmentDirections.actionArticleListFragmentToArticleDetailFragment(item))
                 }
             }
         }
