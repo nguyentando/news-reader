@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_reader"
+    app:startDestination="@id/articleListFragment">
+
+    <fragment
+        android:id="@+id/articleListFragment"
+        android:name="com.umbrella.newsreader.view.articlelist.ArticleListFragment"
+        android:label="ArticleListFragment"
+        tools:layout="@layout/list_with_toolbar">
+        <action
+            android:id="@+id/action_articleListFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.umbrella.newsreader.view.articledetail.ArticleDetailContainerFragment"
+        android:label="ArticleDetailFragment"
+        tools:layout="@layout/article_detail_container">
+        <argument
+            android:name="article"
+            app:argType="com.umbrella.data.model.article.ArticleHeader" />
+        <action
+            android:id="@+id/action_articleDetailFragment_to_imageViewerFragment"
+            app:destination="@id/imageViewerFragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/stand_still"
+            app:popEnterAnim="@anim/stand_still"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageViewerFragment"
+        android:name="com.umbrella.newsreader.view.imageviewer.ImageViewerFragment"
+        android:label="ImageViewerFragment"
+        tools:layout="@layout/image_viewer">
+        <argument
+            android:name="imageViewerModel"
+            app:argType="com.umbrella.newsreader.model.ImageViewerModel" />
+    </fragment>
+</navigation>
