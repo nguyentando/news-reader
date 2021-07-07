@@ -9,11 +9,11 @@
 
     <com.umbrella.newsreader.widget.AspectRatioImageView
         android:id="@+id/imgv"
-        android:layout_width="116dp"
+        android:layout_width="@dimen/article_item_width"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:scaleType="center"
-        app:ari_aspectRatio="3:4"
+        app:ari_aspectRatio="@string/article_image_ratio"
         app:ari_aspectRatioEnabled="true"
         app:ari_dominantMeasurement="width"
         app:shapeAppearance="?attr/shapeAppearanceMediumComponent"

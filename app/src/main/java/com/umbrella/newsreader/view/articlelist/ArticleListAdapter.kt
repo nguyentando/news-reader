@@ -12,7 +12,7 @@ import com.umbrella.newsreader.model.ArticleHeaderItemUI
 import com.umbrella.newsreader.view.diffutil.ArticleHeaderDiffUtil
 import com.umbrella.newsreader.view.viewholder.ArticleHeaderVH
 
-class ArticleAdapter(private val requestManager: RequestManager) : ListAdapter<ArticleHeaderItemUI, ArticleHeaderVH>(ArticleHeaderDiffUtil()) {
+class ArticleAdapter(val requestManager: RequestManager) : ListAdapter<ArticleHeaderItemUI, ArticleHeaderVH>(ArticleHeaderDiffUtil()) {
 
     var callback: Callback? = null
 
@@ -39,6 +39,10 @@ class ArticleAdapter(private val requestManager: RequestManager) : ListAdapter<A
 
     override fun getItemViewType(position: Int): Int {
         return R.layout.item_article
+    }
+
+    fun getItemAt(position: Int): ArticleHeaderItemUI? {
+        return getItem(position)
     }
 
     interface Callback {

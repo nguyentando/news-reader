@@ -51,6 +51,7 @@ object Libs {
     object ImageLoader {
         const val core = "com.github.bumptech.glide:glide:${Versions.glide}"
         const val compiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
+        const val rcv = "com.github.bumptech.glide:recyclerview-integration:${Versions.glide}"
     }
 
     object Helper {

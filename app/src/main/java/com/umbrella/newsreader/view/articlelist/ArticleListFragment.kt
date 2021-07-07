@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import com.bumptech.glide.Glide
+import com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader
 import com.umbrella.data.model.article.ArticleHeader
 import com.umbrella.newsreader.R
 import com.umbrella.newsreader.databinding.ListWithToolbarBinding
@@ -13,6 +14,8 @@ import com.umbrella.newsreader.util.launchAndCollectIn
 import com.umbrella.newsreader.util.safeNavigate
 import com.umbrella.newsreader.util.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
+
+private const val PRELOAD_AHEAD_IMAGE_NUMBER = 10
 
 @AndroidEntryPoint
 class ArticleListFragment : Fragment(R.layout.list_with_toolbar) {
@@ -34,6 +37,8 @@ class ArticleListFragment : Fragment(R.layout.list_with_toolbar) {
         }
         binding.list.rcv.apply {
             adapter = articleAdapter
+            val articleListPreload = ArticleListPreload(requireContext(), articleAdapter)
+            addOnScrollListener(RecyclerViewPreloader(this@ArticleListFragment, articleListPreload, articleListPreload, PRELOAD_AHEAD_IMAGE_NUMBER))
         }
         vm.articleHeaderItemUIList.launchAndCollectIn(viewLifecycleOwner) {
             articleAdapter.submitList(it)

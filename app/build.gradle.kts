@@ -69,6 +69,9 @@ dependencies {
     // load image
     implementation(Libs.ImageLoader.core)
     kapt(Libs.ImageLoader.compiler)
+    implementation(Libs.ImageLoader.rcv) {
+        isTransitive = false
+    }
 
     // helper
     implementation(Libs.Helper.log)
